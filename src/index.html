@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="add_product_form">
+			<label for="pId">
+				<span>Product SKU</span> 
+				<input type="text" name="product_sku" id="pId">
+			</label>
+			<label for="product_name">
+				<span>Product Name</span> 
+				<input type="text" name="product_name" id="pName">
+			</label>
+			<label for="pPrice">
+				<span>Product Price</span> 
+				<input type="text" name="product_price" id="pPrice">
+			</label>
+			<label for="pQuant">
+				<span>Product Quantity</span> 
+				<input type="text" name="product_quantity" id="pQuant">
+			</label>
+			<p class="submit">
+				<input type="button" name="add_product" id="add_product" value="Add Product">
+			</p>
+			    <p class="update">
+				<input type="button" name="add_product" id="update_product" value="Update"></p>
+		</div>
+		<div id="notification">
+			<div class="success"><p>Product added succesfully</p></div>
+			<div class="error"></div>
+		</div>
+		<div id="product_list">
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
